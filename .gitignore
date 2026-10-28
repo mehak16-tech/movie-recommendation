@@ -1,0 +1,27 @@
+
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables and secrets
+.env
+
+# IDE settings
+.vscode/
+
+# MovieLens dataset (keep raw data out of Git)
+data/
+
+# Generated model files
+*.pkl
+*.joblib
+
+# Operating system files
+.DS_Store
+Thumbs.db
