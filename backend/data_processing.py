@@ -3,8 +3,8 @@ from pathlib import Path
 import re
 
 def load_movies():
-    project_root = Path(__file__).resolve().parent.parent
-    file_path = project_root / "data" / "ml-latest-small" / "movies.csv"
+    backend_root = Path(__file__).resolve().parent
+    file_path = backend_root / "data" / "ml-latest-small" / "movies.csv"
 
     movies = pd.read_csv(file_path)
 

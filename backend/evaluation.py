@@ -48,7 +48,7 @@ def recommendation_diversity(recommended_genres):
 
 
 if __name__ == "__main__":
-    from src.recommender import MovieRecommender
+    from backend.recommender import MovieRecommender
 
     recommender = MovieRecommender()
 

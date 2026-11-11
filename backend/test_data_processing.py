@@ -1,5 +1,5 @@
 
-from src.data_processing import load_movies
+from backend.data_processing import load_movies
 
 movies = load_movies()
 
@@ -7,7 +7,7 @@ print(movies.head())
 print("Dataset shape:", movies.shape)
 print("Column names:", movies.columns.tolist())
 
-from src.data_processing import find_invalid_titles
+from backend.data_processing import find_invalid_titles
 
 invalid_titles = find_invalid_titles(movies)
 
@@ -16,7 +16,7 @@ print(invalid_titles)
 
 
 
-from src.data_processing import clean_title_whitespace
+from backend.data_processing import clean_title_whitespace
 
 cleaned_movies = clean_title_whitespace(movies)
 
@@ -26,7 +26,7 @@ print(cleaned_movies[["title", "clean_title"]].head())
 
 
 
-from src.data_processing import identify_unlisted_genres
+from backend.data_processing import identify_unlisted_genres
 
 unlisted_genres = identify_unlisted_genres(movies)
 
@@ -34,14 +34,14 @@ print("Movies with unlisted genres:", unlisted_genres.sum())
 
 
 
-from src.data_processing import parse_genres
+from backend.data_processing import parse_genres
 
 print(parse_genres("Adventure|Animation|Children"))
 print(parse_genres("(no genres listed)"))
 
 
 
-from src.data_processing import parse_year
+from backend.data_processing import parse_year
 
 print(parse_year("Toy Story (1995)"))
 print(parse_year("Unknown Movie"))
@@ -50,7 +50,7 @@ print(parse_year("Movie (1995-1996)"))
 
 
 
-from src.data_processing import preprocess_movies
+from backend.data_processing import preprocess_movies
 
 processed_movies, excluded_movies = preprocess_movies(movies)
 print("Original row count:", len(movies))

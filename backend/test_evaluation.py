@@ -1,9 +1,9 @@
 
 import pytest
 
-from src.evaluation import genre_similarity
-from src.evaluation import average_genre_similarity
-from src.evaluation import recommendation_diversity
+from backend.evaluation import genre_similarity
+from backend.evaluation import average_genre_similarity
+from backend.evaluation import recommendation_diversity
 
 
 def test_identical_genres():

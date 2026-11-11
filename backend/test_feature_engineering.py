@@ -1,6 +1,6 @@
 
-from src.data_processing import load_movies, preprocess_movies
-from src.feature_engineering import build_genre_features
+from backend.data_processing import load_movies, preprocess_movies
+from backend.feature_engineering import build_genre_features
 
 
 def get_feature_data():

@@ -1,7 +1,7 @@
 
 import pandas as pd
 from sklearn.preprocessing import MultiLabelBinarizer
-from src.data_processing import load_movies, preprocess_movies
+from backend.data_processing import load_movies, preprocess_movies
 
 
 def build_genre_vocabulary(processed_movies):

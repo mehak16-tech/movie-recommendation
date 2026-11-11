@@ -2,7 +2,7 @@
 import pandas as pd
 import pytest
 
-from src.recommender import MovieRecommender
+from backend.recommender import MovieRecommender
 
 
 @pytest.fixture
@@ -158,4 +158,3 @@ def test_movie_without_genres_is_not_eligible(recommender):
 
     # Movies in this catalogue already have genre information.
     assert raw_movies["has_genres"].all()
-

@@ -5,18 +5,23 @@
 # Python cache files
 __pycache__/
 *.py[cod]
+.pytest_cache/
 
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
 # Environment variables and secrets
 .env
+.env.*
 
 # IDE settings
 .vscode/
 
-# MovieLens dataset (keep raw data out of Git)
-data/
+# Unused raw data (allow required backend/data/ml-latest-small/movies.csv and README.txt)
+/data/
+backend/data/ml-latest-small/ratings.csv
+backend/data/ml-latest-small/links.csv
+backend/data/ml-latest-small/tags.csv
 
 # Generated model files
 *.pkl
